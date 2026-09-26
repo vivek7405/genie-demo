@@ -1,3 +1,4 @@
+name: genie-demo
 # genie-demo local parity with production, using the same Dockerfile, one service.
 #
 #   docker compose up --build   →   http://localhost:8080
