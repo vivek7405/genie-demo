@@ -1,5 +1,5 @@
 import { defineRelations } from 'drizzle-orm';
-import { table, pk, uuidPk, text, bool, json, createdAt } from './columns.server.ts';
+import { table, pk, uuidPk, text, integer, bool, json, createdAt } from './columns.server.ts';
 
 // Example model. Feel free to delete or extend.
 export const users = table('users', {
@@ -12,10 +12,19 @@ export const users = table('users', {
   createdAt: createdAt(),
 });
 
+export const teamMembers = table('team_members', {
+  id: pk(),
+  name: text().notNull(),
+  role: text().notNull(),
+  bio: text().notNull(),
+  position: integer().notNull().default(0),
+  createdAt: createdAt(),
+});
 
 // Relations live here (one defineRelations for the whole schema). Empty
 // for now; add per-model relations as your schema grows.
-export const relations = defineRelations({ users }, () => ({}));
+export const relations = defineRelations({ users, teamMembers }, () => ({}));
 
 // Derived types, never hand-written.
 export type User = typeof users.$inferSelect;
+export type TeamMember = typeof teamMembers.$inferSelect;

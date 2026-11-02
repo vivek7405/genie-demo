@@ -14,7 +14,7 @@ export default function Home() {
       <ul class="m-0 pl-5">
         <li>Catalogue: coming soon</li>
         <li>Cart: coming soon</li>
-        <li>About: coming soon</li>
+        <li><a href="/about">About</a></li>
       </ul>
     </div>
   `;
