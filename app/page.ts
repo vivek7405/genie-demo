@@ -16,6 +16,7 @@ export default function Home() {
         <li>Cart: coming soon</li>
         <li><a href="/about">About</a></li>
       </ul>
+      <footer class="text-sm m-0 opacity-70">&copy; Acme Shop. Built with WebJs.</footer>
     </div>
   `;
 }
