@@ -6,6 +6,7 @@ const team = [
   { name: 'Grace Hopper', role: 'Head of Engineering', bio: 'Keeps the storefront fast and the deploys boring.' },
   { name: 'Alan Turing', role: 'Catalogue Lead', bio: 'Curates every product that reaches the shelf.' },
   { name: 'Margaret Hamilton', role: 'Customer Care', bio: 'Makes sure every order arrives and every question is answered.' },
+  { name: 'Ada Lovelace', role: 'Head of Analysis', bio: 'Turns sales data into decisions about what to stock next.' },
 ];
 
 await db.delete(teamMembers);
