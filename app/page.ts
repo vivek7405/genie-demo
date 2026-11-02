@@ -8,6 +8,7 @@ export default function Home() {
   return html`
     <div class="max-w-2xl mx-auto px-6 py-24 flex flex-col gap-6">
       <h1 class="text-4xl font-bold tracking-tight m-0">Acme Shop</h1>
+      <p class="text-lg m-0 text-muted-foreground">Everyday goods, made simple.</p>
       <p class="text-base leading-relaxed m-0 opacity-70">
         A small storefront that Genie builds on. Every task on the board becomes a branch, a pull request and a preview here.
       </p>
