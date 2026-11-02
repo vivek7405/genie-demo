@@ -15,6 +15,7 @@ export default function Home() {
         <li>Catalogue: coming soon</li>
         <li>Cart: coming soon</li>
         <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
   `;
